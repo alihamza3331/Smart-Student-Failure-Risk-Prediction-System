@@ -1,23 +1,18 @@
-import streamlit as st
-
-st.title('🎈 App Name')
-
-st.write('Hello world!')
-
 import io
 import os
 import pandas as pd
 import requests
 import streamlit as st
 
-# Base API URL pointing to FastAPI running on port 8001
-API_URL = "http://127.0.0.1:8001"
-
+# MUST be the first Streamlit command called
 st.set_page_config(
     page_title="Student Risk Prediction System",
     page_icon="🎓",
     layout="wide"
 )
+
+# Base API URL pointing to FastAPI running on port 8001
+API_URL = "http://127.0.0.1:8001"
 
 st.title("🎓 Smart Student Failure Risk Prediction System")
 st.write("Predict student performance using both Classification and Regression models.")
