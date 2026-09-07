@@ -5,13 +5,13 @@ st.title('🎈 App Name')
 st.write('Hello world!')
 
 import io
+import os
 import pandas as pd
 import requests
 import streamlit as st
 
-# Define backend API base URL
-API_URL = "[http://127.0.0.1:8000](http://127.0.0.1:8000)"
-API_BASE_URL = "http://127.0.0.1:8000"
+# Base API URL pointing to FastAPI running on port 8001
+API_URL = "http://127.0.0.1:8001"
 
 st.set_page_config(
     page_title="Student Risk Prediction System",
