@@ -1,1 +1,9 @@
 streamlit>=1.26.0
+fastapi
+uvicorn
+streamlit
+pandas
+scikit-learn
+joblib
+requests
+python-multipart
