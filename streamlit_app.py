@@ -11,7 +11,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Base API URL pointing to FastAPI running on port 8001
+# Base API URL pointing to internal FastAPI running on port 8001
 API_URL = "http://127.0.0.1:8001"
 
 st.title("🎓 Smart Student Failure Risk Prediction System")
@@ -90,7 +90,7 @@ if predict_btn:
     try:
         cls_param = cls_model_map[selected_cls_label]
         cls_response = requests.post(
-            f"{API_BASE_URL}/predict/classification",
+            f"{API_URL}/predict/classification",
             params={"model_name": cls_param},
             json=payload
         )
@@ -109,7 +109,7 @@ if predict_btn:
     try:
         reg_param = reg_model_map[selected_reg_label]
         reg_response = requests.post(
-            f"{API_BASE_URL}/predict/regression",
+            f"{API_URL}/predict/regression",
             params={"model_name": reg_param},
             json=payload
         )
@@ -149,7 +149,7 @@ if uploaded_file is not None:
         with st.spinner("Processing CSV file..."):
             try:
                 batch_response = requests.post(
-                    f"{API_BASE_URL}/predict-file",
+                    f"{API_URL}/predict-file",
                     params={"model_name": batch_model_param},
                     files=files
                 )
@@ -157,11 +157,9 @@ if uploaded_file is not None:
                 if batch_response.status_code == 200:
                     st.success("Batch prediction completed successfully!")
                     
-                    # Convert response content into a pandas DataFrame to preview
                     result_df = pd.read_csv(io.BytesIO(batch_response.content))
                     st.dataframe(result_df, use_container_width=True)
                     
-                    # Download button for predicted CSV
                     st.download_button(
                         label="Download Predicted CSV",
                         data=batch_response.content,
