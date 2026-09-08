@@ -6,7 +6,7 @@ import streamlit as st
 
 # MUST be the first Streamlit command called
 st.set_page_config(
-    page_title="Student Risk Prediction System",
+    page_title="Student Risk Prediction System.",
     page_icon="🎓",
     layout="wide"
 )
