@@ -15,7 +15,7 @@ my website link: https://smart-student-failure-risk-prediction.onrender.com
 The App features:
 
 - **FastAPI** backend serving trained Machine Learning models
-- **Streamlit** user interface for individual interactive predictions
+- **Streamlit** user interface for individual interactive predictions for students
 - **Batch CSV processing** for bulk predictions for teachers
 
 ---
