@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 import streamlit as st
 
-# MUST be the first Streamlit command called
+
 st.set_page_config(
     page_title="Student Risk Prediction System.",
     page_icon="🎓",
@@ -17,7 +17,7 @@ API_URL = "http://127.0.0.1:8001"
 st.title("🎓 Smart Student Failure Risk Prediction System")
 st.write("Predict student performance using both Classification and Regression models.")
 
-# --- SECTION 1: INDIVIDUAL PREDICTION ---
+# --- SECTION 1: INDIVIDUAL ---
 st.header("Single Student Prediction")
 
 col1, col2 = st.columns(2)
@@ -126,7 +126,7 @@ if predict_btn:
 
 st.divider()
 
-# --- SECTION 2: BATCH CSV PREDICTION ---
+# --- SECTION 2: CSV  ---
 st.header("Batch CSV Prediction")
 
 all_models_map = {
