@@ -45,7 +45,7 @@ class RegressionModel(str, Enum):
     linear = "linear_regression"
 
 
-# Pydantic schema for input features
+# Pydantic schema
 class RiskFeatures(BaseModel):
     study_hours: float = Field(ge=0, le=24, description="Daily study hours of the student")
     attendance_pct: float = Field(ge=0, le=100, description="Attendance percentage of the student")
