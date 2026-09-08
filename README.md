@@ -2,8 +2,11 @@
 
 ## Live App
 
-[(https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://app-starter-kit.streamlit.app/]](https://smart-student-failure-risk-prediction.onrender.com/)
+## 🌐 Live Demo
 
+🚀 **Try the application online:**
+
+[👉 Smart Student Failure Risk Prediction System](https://smart-student-failure-risk-prediction.onrender.com)
 
 
 A full-stack machine learning web application to evaluate and forecast student academic performance and risk.
