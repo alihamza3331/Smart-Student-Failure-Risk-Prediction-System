@@ -16,7 +16,7 @@ The App features:
 
 - **FastAPI** backend serving trained Machine Learning models
 - **Streamlit** user interface for individual interactive predictions
-- **Batch CSV processing** for bulk predictions
+- **Batch CSV processing** for bulk predictions for teachers
 
 ---
 
