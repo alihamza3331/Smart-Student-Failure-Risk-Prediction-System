@@ -2,7 +2,7 @@
 
 ## Live App
 
-[![Streamlit App](https://smart-student-failure-risk-prediction.onrender.com/)
+[(https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://app-starter-kit.streamlit.app/]](https://smart-student-failure-risk-prediction.onrender.com/)
 
 
 
