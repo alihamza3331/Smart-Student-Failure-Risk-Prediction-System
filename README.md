@@ -12,10 +12,7 @@ or
 
 my website link: https://smart-student-failure-risk-prediction.onrender.com
 
-
-A full-stack machine learning web application to evaluate and forecast student academic performance and risk.
-
-The system features:
+The App features:
 
 - **FastAPI** backend serving trained Machine Learning models
 - **Streamlit** user interface for individual interactive predictions
