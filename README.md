@@ -8,6 +8,10 @@
 
 [👉 Smart Student Failure Risk Prediction System](https://smart-student-failure-risk-prediction.onrender.com)
 
+or 
+
+my website link: https://smart-student-failure-risk-prediction.onrender.com
+
 
 A full-stack machine learning web application to evaluate and forecast student academic performance and risk.
 
